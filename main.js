@@ -34,6 +34,13 @@
 // Feel free to ask lots of questions and think aloud.
 
 function makeChart (data, metricName, metricCode, domain) {
+    var elem=document.getElementById("domain").value;
+    var e = document.getElementById("metric");
+    var k = e.options[e.selectedIndex].text;
+    var url = ("https://apps.compete.com/sites/"+elem+"/"+k+"/?apikey=27953e450d095eb57efe7d37187f0ae8");
+    window.location = url;
+    
+}
     // Params:
     // `data` - the raw data Compete gives you after the JSONP request
     // `metricName` - a name from the Metric drop down.
